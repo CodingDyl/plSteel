@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 
 import { MantineProvider } from '@mantine/core';
+import About from "./components/About";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
         <div className="z-0 bg-primary text-white">
           <Hero />
+          <About />
         </div>
       </BrowserRouter>
     </MantineProvider>
