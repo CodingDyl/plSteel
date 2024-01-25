@@ -1,3 +1,5 @@
+import { insta, link, twitter, facebook } from "../assets";
+
 const navLinks = [
     {
       id: "about",
@@ -17,4 +19,23 @@ const navLinks = [
     },
   ];
 
-  export { navLinks };
+  const socials = [
+    {
+      name: 'twitter',
+      url: twitter,
+    },
+    {
+      name: 'linkedin',
+      url: link,
+    },
+    {
+      name: 'instagram',
+      url: insta,
+    },
+    {
+      name: 'facebook',
+      url: facebook,
+    },
+  ];
+
+  export { navLinks, socials };
