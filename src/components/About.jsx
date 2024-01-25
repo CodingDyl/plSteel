@@ -6,7 +6,7 @@ import { downArrow } from '../assets';
 
 const About = () => {
   return (
-    <section className={`${styles.paddingX} z-10 relative h-[100vh] w-[100%]`}>
+    <section id='about' className={`${styles.paddingX} z-10 relative h-[105vh] w-[100%]`}>
       <motion.div variants={staggerContainer} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0.25}} className={`${styles.innerWidth} h-full w-full ${styles.flexCenter} flex-col`}>
         <p className={`${styles.sectionSubText} text-center`}>
           | Introduction.
