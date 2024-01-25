@@ -6,7 +6,7 @@ import { downArrow } from '../assets';
 
 const About = () => {
   return (
-    <section id='about' className='z-10 relative h-[100vh] w-[100%]'>
+    <div id='about' className='z-10 relative h-[100vh] w-[100%] overflow-hidden'>
       <motion.div variants={staggerContainer} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0.25}} className={`${styles.innerWidth} ${styles.paddingX} h-full w-full ${styles.flexCenter} flex-col mx-auto`}>
         <p className={`${styles.sectionSubText} text-center`}>
           | Introduction.
@@ -25,7 +25,7 @@ const About = () => {
 
         <motion.img variants={fadeIn('up', 'tween', 0.3, 1)}  src={downArrow} alt="down arrow" className="w-[18px] h-[28px] object-contain mt-[28px]"/>
       </motion.div>
-    </section>
+    </div>
   )
 }
 
