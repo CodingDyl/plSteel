@@ -1,7 +1,16 @@
 const styles = {
+
+    innerWidth: '2xl:max-w-[1280px] w-full',
+    interWidth: 'lg:w-[80%] w-[100%]',
+    
     paddingX: "sm:px-16 px-6",
     paddingY: "sm:py-16 py-6",
     padding: "sm:px-16 px-6 sm:py-16 py-10",
+
+    flexCenter: 'flex justify-center items-center',
+    flexStart: 'flex justify-start items-start',
+    flexEnd: 'flex justify-end',
+    navPadding: 'pt-[98px]',
   
     heroHeadText:
       "font-black text-white lg:text-[70px] md:text-[65px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2",
