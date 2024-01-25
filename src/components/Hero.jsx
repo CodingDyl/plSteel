@@ -7,17 +7,12 @@ import Lottie from 'lottie-react'
 const Hero = () => {
   return (
     <>
-      <div className="bg-background h-[100vh] w-[100%] bg-cover bg-no-repeat bg-fixed bg-center bg-center bg-blend-overlay bg-black/25">
-        <Navbar />
-        <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl flex flex-col justify-center md:flex-row mx-auto items-center md:justify-between gap-5`}>
+        <div className={`${styles.paddingX} h-full w-full flex flex-col justify-center items-center text-center gap-1 `}>
           <div>
+            <p className={`${styles.heroSubText} text-white-100`}>Since 1993.</p>
             <h1 className={`${styles.heroHeadText} text-white`}>CHANGING THE WAY WE DO STEEL</h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>Since 1993.</p>
           </div>
-
-          <Lottie animationData={animationData} />
         </div>
-      </div>
     </>
   )
 }

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 
 import { MantineProvider } from '@mantine/core';
 import About from "./components/About";
+import '@mantine/core/styles.css';
 
 function App() {
 
@@ -11,7 +12,10 @@ function App() {
     <MantineProvider>
       <BrowserRouter>
         <div className="z-0 bg-primary text-white">
-          <Hero />
+          <div className="h-[100vh] w-[100%] bg-background bg-cover bg-no-repeat bg-fixed bg-center bg-blend-overlay bg-black/35">
+            <Navbar />
+            <Hero />
+          </div>
           <About />
         </div>
       </BrowserRouter>
