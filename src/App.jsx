@@ -6,6 +6,8 @@ import { MantineProvider } from '@mantine/core';
 import About from "./components/About";
 import Footer from "./components/Footer";
 import '@mantine/core/styles.css';
+import Contact from "./components/Contact";
+import Team from "./components/Team";
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
             <Hero />
           </div>
           <About />
+          <Team />
+          <Contact />
           <Footer />
         </div>
       </BrowserRouter>
