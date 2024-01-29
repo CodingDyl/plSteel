@@ -8,7 +8,7 @@ import TeamCard from '../components/TeamCard'
 const Team = () => {
   const [active, setActive] = useState('team-2');
   return (
-    <div id='team' className='z-10 relative h-[100vh] w-[100%] overflow-hidden mb-20'>
+    <div id='team' className='z-2 relative min-h-screen w-[100%] overflow-hidden mb-20'>
         <motion.div variants={staggerContainer} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0.25}} className={`${styles.innerWidth} ${styles.paddingX} h-full w-full ${styles.flexStart} items-center mt-20 flex-col mx-auto`}>
             <p className={`${styles.sectionSubText} text-center`}>
             | Who Is Working For You.

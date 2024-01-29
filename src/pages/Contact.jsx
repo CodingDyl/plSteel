@@ -46,7 +46,7 @@ const Contact = () => {
   
   return (
     <>
-        <motion.div variants={staggerContainer} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0.25}} className={`${styles.interWidth} lg:${styles.paddingX} min-h-screen w-[100%] flex flex-col justify-between gap-10 items-center mx-auto`}>
+        <motion.div id='contact' variants={staggerContainer} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0.25}} className={`${styles.interWidth} lg:${styles.paddingX} min-h-screen w-[100%] flex flex-col justify-between gap-10 items-center mx-auto`}>
            <div><p className={`${styles.sectionSubText} text-center`}>
             | Get In Touch.
             </p>
