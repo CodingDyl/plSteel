@@ -1,13 +1,13 @@
 import { BrowserRouter } from "react-router-dom"
-import Hero from "./components/Hero"
-import Navbar from "./components/Navbar"
 
 import { MantineProvider } from '@mantine/core';
-import About from "./components/About";
-import Footer from "./components/Footer";
+import Navbar from "./pages/Navbar";
+import Hero from "./pages/Hero";
+import About from "./pages/About";
+import Team from "./pages/Team";
+import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 import '@mantine/core/styles.css';
-import Contact from "./components/Contact";
-import Team from "./components/Team";
 
 function App() {
 

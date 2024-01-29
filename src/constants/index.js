@@ -42,4 +42,31 @@ const navLinks = [
     },
   ];
 
-  export { navLinks, socials };
+  const contactPeople = [
+    {
+      name: 'Billy Gissing',
+      email: 'billy@plsteel.co.za',
+      cell: '079 796 3113',
+      position: 'Production'
+    },
+    {
+      name: 'Bonita Sherrard',
+      email: 'bonitas@plsteel.co.za',
+      cell: '083 548 4541',
+      position: 'Accounts'
+    },
+    {
+      name: 'Francois Oberholster',
+      email: 'drawingoffice8@plsteel.co.za',
+      cell: '082 325 4053',
+      position: 'Drawing'
+    },
+    {
+      name: 'Cherise Pollen',
+      email: 'cherise@plsteel.co.za',
+      cell: '072 507 3364',
+      position: 'Sales'
+    },
+  ];
+
+  export { navLinks, socials, contactPeople };
