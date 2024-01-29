@@ -10,6 +10,7 @@ const styles = {
 
     flexCenter: 'flex justify-center items-center',
     flexStart: 'flex justify-start items-start',
+    flexStartCenter: 'flex flex-col justify-start items-center',
     flexEnd: 'flex justify-end',
     navPadding: 'pt-[98px]',
   
