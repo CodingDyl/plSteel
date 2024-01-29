@@ -1,4 +1,4 @@
-import { insta, link, twitter, facebook } from "../assets";
+import { insta, link, twitter, facebook, owner, finance, sales, draughting, production, billy, fran, bonita, cherise } from "../assets";
 
 const navLinks = [
     {
@@ -66,6 +66,39 @@ const navLinks = [
       email: 'cherise@plsteel.co.za',
       cell: '072 507 3364',
       position: 'Sales'
+    },
+  ];
+
+  export const exploreTeams = [
+    {
+      id: 'team-1',
+      imgUrl: cherise,
+      title: 'Sales Team',
+      teamManager: "Cherise Pollen"
+    },
+    {
+      id: 'team-2',
+      imgUrl: owner,
+      title: 'Managing Director',
+      teamManager: "Peter Elsmore"
+    },
+    {
+      id: 'team-3',
+      imgUrl: fran,
+      title: 'Draughting Team',
+      teamManager: "Francois Oberholster"
+    },
+    {
+      id: 'team-4',
+      imgUrl: bonita,
+      title: 'Finance Team',
+      teamManager: "Bonita Sherrard"
+    },
+    {
+      id: 'team-5',
+      imgUrl: billy,
+      title: 'Production Team',
+      teamManager: "Billy Gissing"
     },
   ];
 
