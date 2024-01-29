@@ -9,6 +9,7 @@ import { Avatar, Text, Group } from '@mantine/core';
 import { IconPhoneCall, IconAt } from '@tabler/icons-react';
 import ContactForm from '../components/ContactForm'
 import ContactHeading from '../components/ContactHeading'
+import { TypingText, TitleText } from '../components/CustomTexts'
 
 const Contact = () => {
     const EmployeeCard = ({ name, cell, email, position }) => (
@@ -47,10 +48,11 @@ const Contact = () => {
   return (
     <>
         <motion.div id='contact' variants={staggerContainer} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0.25}} className={`${styles.interWidth} lg:${styles.paddingX} min-h-screen w-[100%] flex flex-col justify-between gap-10 items-center mx-auto`}>
-           <div><p className={`${styles.sectionSubText} text-center`}>
-            | Get In Touch.
-            </p>
-            <h1 className={`${styles.sectionHeadText} text-center`}>Contact Us.</h1></div>
+           <div><TypingText title="| Get in Touch." textStyles="text-center" />
+        <TitleText
+          title={<>Contact Us.</>}
+          textStyles="text-center"
+        /></div>
 
             {/* Contact Heading */}
             <ContactHeading />

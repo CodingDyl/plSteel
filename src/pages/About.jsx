@@ -3,15 +3,17 @@ import { styles } from '../styles'
 import { motion } from "framer-motion";
 import { staggerContainer, fadeIn } from '../utils/motion';
 import { downArrow } from '../assets';
+import { TypingText, TitleText } from '../components/CustomTexts';
 
 const About = () => {
   return (
     <div id='about' className='z-10 relative h-[100vh] w-[100%] overflow-hidden'>
       <motion.div variants={staggerContainer} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0.25}} className={`${styles.innerWidth} ${styles.paddingX} h-full w-full ${styles.flexCenter} flex-col mx-auto`}>
-        <p className={`${styles.sectionSubText} text-center`}>
-          | Introduction.
-        </p>
-        <h1 className={`${styles.sectionHeadText} text-center`}>About Us</h1>
+      <TypingText title="| Introduction." textStyles="text-center" />
+        <TitleText
+          title={<>About Us.</>}
+          textStyles="text-center"
+        />
 
         <div className='flex flex-col gap-2'>
         <motion.p variants={fadeIn('up', 'tween', 0.2, 1)} className="mt-8 font-normal md:text-[25px] text-[15px] text-center text-secondary-white">
