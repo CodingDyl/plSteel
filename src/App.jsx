@@ -15,7 +15,7 @@ function App() {
     <MantineProvider>
       <BrowserRouter>
         <div className="z-0 bg-primary text-white overflow-hidden">
-          <div className="h-[100vh] w-[100%] bg-background bg-auto md:bg-cover bg-no-repeat bg-fixed bg-center bg-blend-overlay bg-black/35">
+          <div className="h-[100vh] w-[100%] bg-background bg-cover object-contain bg-no-repeat bg-fixed bg-center bg-blend-overlay bg-black/35">
             <Navbar />
             <Hero />
           </div>
