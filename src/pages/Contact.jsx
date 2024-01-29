@@ -7,6 +7,7 @@ import { contactPeople } from '../constants'
 
 import { Avatar, Text, Group } from '@mantine/core';
 import { IconPhoneCall, IconAt } from '@tabler/icons-react';
+import ContactForm from '../components/ContactForm'
 
 const Contact = () => {
     const EmployeeCard = ({ name, cell, email, position }) => (
@@ -25,9 +26,9 @@ const Contact = () => {
             {name}
           </Text>
 
-          <Group wrap="nowrap" gap={10} mt={3}>
+          <Group wrap="nowrap" gap={5} mt={3}>
             <IconAt stroke={1.5} size="1rem" />
-            <Text fz="xs" c="dimmed">
+            <Text fz="xs" c="dimmed" truncate>
               {email}
             </Text>
           </Group>
@@ -44,11 +45,14 @@ const Contact = () => {
   
   return (
     <>
-        <motion.div variants={staggerContainer} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0.25}} className={`${styles.interWidth} lg:${styles.paddingX} min-h-screen w-[100%] flex flex-col justify-between items-center mx-auto`}>
+        <motion.div variants={staggerContainer} initial='hidden' whileInView='show' viewport={{ once: false, amount: 0.25}} className={`${styles.interWidth} lg:${styles.paddingX} min-h-screen w-[100%] flex flex-col justify-between gap-4 items-center mx-auto`}>
            <div><p className={`${styles.sectionSubText} text-center`}>
             | Get In Touch.
             </p>
             <h1 className={`${styles.sectionHeadText} text-center`}>Contact Us.</h1></div>
+
+            {/* Contact Form */}
+            <ContactForm />
 
             {/* Employee View */}
             <div className='flex flex-col gap-4 md:flex-row w-[100%] mb-10 justify-center md:justify-between items-center'>
