@@ -3,6 +3,7 @@ import { styles } from '../styles';
 import { socials } from '../constants';
 import { footerVariants } from '../utils/motion';
 import { headset } from '../assets';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -42,12 +43,12 @@ const Footer = () => {
           </p>
           <div className="flex gap-4">
             {socials.map((social) => (
-              <img
-                key={social.name}
-                src={social.url}
-                alt={social.name}
-                className="w-[24px] h-[24px] object-contain cursor-pointer"
-              />
+              <Link to={social.link} target='_blank'><img
+              key={social.name}
+              src={social.url}
+              alt={social.name}
+              className="w-[24px] h-[24px] object-contain cursor-pointer"
+            /></Link>
             ))}
           </div>
         </div>

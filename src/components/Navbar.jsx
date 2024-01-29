@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
 
         {/* Action Button */}
-          <Button variant="filled" className='hidden md:block border-solid border-white hover:bg-white hover:border-black-100 hover:text-black-100'>Contact Us</Button>      
+          <Button variant="filled" className='hidden md:block border-solid border-white hover:bg-white hover:border-black-100 hover:text-black-100'><a href='#contact'>Contact Us</a></Button>      
         </div>
     </nav>
   )
