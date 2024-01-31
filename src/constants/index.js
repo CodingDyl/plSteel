@@ -102,4 +102,50 @@ const navLinks = [
     },
   ];
 
-  export { navLinks, socials, contactPeople };
+  const sector1 = [
+    {
+      title: "CNC Lazer Cutting",
+      //icon: brakes,
+    },
+    {
+      title: 'High Definition CNC Plasma Cutting',
+      //icon: autoElectrical,
+    },
+    {
+      title: "CNC Profile Cutting",
+      //icon: inspection,
+    },
+    {
+      title: 'CNC Bending',
+      //icon: batteries,
+    },
+    {
+      title: 'Rolling',
+      //icon: batteries,
+    },
+  ];
+
+  const sector2 = [
+    {
+      title: "Polishing/Brushing",
+      //icon: brakes,
+    },
+    {
+      title: 'Drilling',
+      //icon: autoElectrical,
+    },
+    {
+      title: "Bevelling",
+      //icon: inspection,
+    },
+    {
+      title: 'Chamfering',
+      //icon: batteries,
+    },
+    {
+      title: 'Fabrication',
+      //icon: batteries,
+    },
+  ];
+
+  export { navLinks, socials, contactPeople, sector1, sector2 };

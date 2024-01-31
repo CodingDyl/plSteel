@@ -5,6 +5,7 @@ import Navbar from "./pages/Navbar";
 import Hero from "./pages/Hero";
 import About from "./pages/About";
 import Team from "./pages/Team";
+import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import '@mantine/core/styles.css';
@@ -21,6 +22,7 @@ function App() {
           </div>
           <About />
           <Team />
+          <Services />
           <Contact />
           <Footer />
         </div>
