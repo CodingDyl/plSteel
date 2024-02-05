@@ -48,11 +48,7 @@ const Services2 = ({title}) => (
         /> 
 
         <div className={`${styles.paddingX} ${styles.flexCenter} `}>
-        <SimpleGrid cols={2} verticalSpacing="xl" className="pt-10" breakpoints={[
-            { maxWidth: '992px', cols: 1, spacing: 'md' },
-            { maxWidth: '768px', cols: 1, spacing: 'sm' },
-            { maxWidth: '576px', cols: 1, spacing: 'sm' },
-        ]}>
+        <SimpleGrid cols={{ base:1, xs:1, sm:1, md:2, lg:2 }} verticalSpacing="xl" className="pt-10">
             <div className="flex flex-col justify-center align-left">
             {sector1.map((sector1, index) => (
               <Services1 key={sector1.title} index={index} {...sector1} />
